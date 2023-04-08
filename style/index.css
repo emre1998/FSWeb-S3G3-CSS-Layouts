@@ -1,113 +1,95 @@
 /* CSS stillerinizi buraya girin */
-@import url('reset.css');
 
+/* @import url(./reset.css); */
+/* * {
+  border: 1px tomato solid;
+  box-sizing: border-box;
+} */
 
-
-.ust-menu {
-    display: flex;
-    flex-direction: row;
-    padding: 47px;
-    background: linear-gradient(24deg, rgba(2,0,36,1) 3%, rgba(9,121,9,1) 30%, rgba(0,212,255,1) 68%);
-    margin-top: 0px;
-    margin-bottom: 30px;
+.div{
+  display: inline;
 }
-.ust-item {
-    margin-right: 10px;
-    padding: 7px;
-    color: black;
-    font-weight: bold;
+
+.wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    
+  }
+  
+  .header {
+    color: white;
+    background: rgb(2,0,36);
+background: linear-gradient(28deg, rgba(2,0,36,1) 1%, rgba(9,58,121,1) 19%, rgba(218,228,217,0.815091002221201) 95%);
+    padding: 2rem 0;
+  }
+  
+  .header nav {
+    margin-top: 20px;
+  }
+  
+  .menu {
+    padding: 0.5rem 0.75rem;
     background-color: white;
-	border-style: groove;
-    border-radius:10px;
-	border-width: 0.2px;
-	border-color: rgb(18, 16, 16);
-    justify-content:flex-start;
-}
-
-
-.main container {
-    display:flex;
-   flex-direction: row;
-}
-
-
-.title-name{
-    display:flex;
-    color:rgb(255, 255, 255);
-    font-family: Chealsea Market,cursive;
-    font-size:32px;
-    margin-right:50px;
-}
-
-
-.vertical-center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin-right: 10px;
   }
-
   
-.products-container {
+
+  .about {
     display: flex;
+    gap: 2rem;
     flex-wrap: wrap;
-    flex-direction:row;
+  }
+  .about__img {
+    /* min-width: 450px; */
+    /* flex-grow: 1; */
+    flex-basis: 450px;
+    min-width: 400px;
+    height: 400px;
+    object-fit: contain;
   }
   
-  .product-item {
-    background-color:white;
-    width: 10rem;
-    height: 5rem;
-    border: 1px groove rgb(100, 113, 134);
-    border-radius: 0px;
+  .about__img img,
+  .project__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .about__text {
+    flex-basis: 400px;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: flex-start;
   }
-
-  .footer-menu {
+  
+  .projects {
     display: flex;
     flex-direction: row;
-    padding: 90px;
-    background: linear-gradient(24deg, rgb(110, 108, 161) 3%, rgb(67, 114, 67) 30%, rgba(0,212,255,1) 68%);
-    margin-top: 0px;
-    margin-top: 50px;
-    
-}
-.footer-item {
-    margin-right: 10px;
-    padding: 7px;
-    position: absolute;
-    left:40%;
-    bottom:18 ;
-    color: black;
-    font-weight: bold;
-    background-color: white;
-	border-style: groove;
-    border-radius:10px;
-	border-width: 0.2px;
-	border-color: rgb(18, 16, 16);
-    justify-content:flex-start
-    
-}
-p {
-  position: absolute; /* added this line */
-  top: 550px; /* added this line */
-  left: 35%; /* added this line */
-  font-size: 32px;
-  color:white;
-}
-
-
-
-
-
-
-
-
-
-
-
-
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .project {
+    width: 210px;
+  }
+  
+  .footer {
+    background: rgb(2,0,36);
+    background: linear-gradient(332deg, rgba(2,0,36,1) 1%, rgba(9,58,121,1) 19%, rgba(218,228,217,0.815091002221201) 95%);
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+ .footer__button{
+  align-items:left; 
+ }
  
-  
-  
-  
-  
+ 
